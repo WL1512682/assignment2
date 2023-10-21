@@ -1,0 +1,44 @@
+Note. Git Lab Tutorial Run-Through date - 10/20/2023
+GitHub setup date - 10/20/2023
+Repo: https://github.com/WL1512682/assignment2
+
+1. $ git status > docs/status.txt
+git add docs/status.txt
+git commit -m "Added git status output to docs"
+git push
+warning: in the working copy of 'docs/status.txt', LF will be replaced by CRLF the next time Git touches it
+[master 5731c38] Added git status output to docs
+ 1 file changed, 8 insertions(+)
+ create mode 100644 docs/status.txt
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 490 bytes | 490.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:WL1512682/assignment2.git
+   a5c7e22..5731c38  master -> master
+
+2. 9 commits
+
+3. git log -1 -- README.md
+Date:   Fri Oct 20 23:18:25 2023 -0400
+
+4. Branches help isolate features and bug fixes, and allow many developers can work concurrently without stability issues.
+
+5. git log shows a history of commits for the current branch while git status shows the state of changes for the next commit in the immediate directory
+
+6. git log -- Vehicle.h
+
+7. git log --grep="file"
+
+8. Inheritance is when a subclass inherits properties and behaviors from a parent class, allowing the reuse of code and proper hierarchy.
+Polymorphism is when classes are capable of being treated as instances of a single interface through inheritance.
+Encapsulation is when data and methods are bundled into a single class, and access to some of an object's components are restricted.
+
+9. In the "Dictator and Lieutenants" workflow, one primary maintainer called the dictator integrates the patches from many contributing developers.
+This is in contrast to the "Integration Manager" workflow where multiple integration managers pull and test contributions from developers, and then the main maintainer then pulls those tested contributions.
+
+10. A team of 100 developers can benefit from the Dictator and Lieutenants workflow by allowing for a higher degree of quality control among each of the lieutenant's responsible specialized areas. The main maintainer will also be less likely to be overwhelmed than in the centralized workflow where too many pull requests may be given at once. 
+Overall, with a large team in this scenario, this workflow seems more scalable and efficient for a project that will likely require parallel development and would allow for a higher degree of conflict resolution by ensuring that conflicts within the code are managed at the lieutenant level before reaching the dictator.
